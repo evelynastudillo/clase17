@@ -1,4 +1,5 @@
 class Anything
+ attr_reader :a 
     def foo
     @a = 5
   end
@@ -9,6 +10,6 @@ class Anything
 end
 
 any = Anything.new
-any.foo
-any.bar
+p any.foo
+p any.bar
 p any.a
